@@ -20,9 +20,8 @@ def play(data)
   output = "Invalid input, please try again"
   
   data.each_with_index do |val, i|
-    arr = val.split(' - ')
-    if (input.to_i - 1) == i || input == arr[1]
-      output = "Playing #{arr[1]}"
+    if (input.to_i - 1) == i || input == val
+      output = "Playing #{val}"
     end
   end
   
